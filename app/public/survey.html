@@ -1,30 +1,177 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Friend Finder</title>
-        <!-- jQuery  -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Bootstrap-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <!-- Font Awesome  -->
-        <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-        <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-        <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-    </head>
-    <body>
-      <h3>Survey Questions</h3>
-      <h4>About You</h4>
-      <form>
-        <div class="form-group">
-          <label for="formGroupExampleInput">Name (required)</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
-        </div>
-        <div class="form-group">
-          <label for="formGroupExampleInput2">Link to Photo Image (required) </label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="https://profilepic.com/sites/default/files/styles/shutterstock_648907024.jpg?itok=0hb44OrI">
-        </div>
-      </form>
 
-    </body>
+<head>
+  <title>Friend Finder</title>
+  <!-- jQuery  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-1">
+      </div>
+      <div class="col-10">
+        <h3>Survey Questions</h3>
+        <h4>About You</h4>
+        <form>
+          <div class="form-group">
+            <label  for="formGroupExampleInput">Name (required)</label>
+            <input type="text" id="name" class="form-control" id="formGroupExampleInput" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Link to Photo Image (required) </label>
+            <input type="text" class="form-control" id="formGroupExampleInput2"
+              placeholder="https://profilepic.com/sites/default/files/styles/k_648907024.jpg?itok=0hb44OrI">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+          </div>
+
+          <div class="col-9">
+            <h4>Question 1</h4>
+            <h6 for="exampleFormControlSelect1">You find enjoyment in staying indoors and being alone rather than going out and partying.</h6>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="1">1 strongly disagree</option>
+              <option value="2">2 disagree</option>
+              <option value="3">3 neutral</option>
+              <option value="4">4 agree</option>
+              <option value="5">5 strongly agree</option>
+            </select>
+
+            <h4>Question 2</h4>
+            <h6 for="exampleFormControlSelect1">You find it hard to connect with others and find topics to talk about.</h6>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="1">1 strongly disagree</option>
+              <option value="2">2 disagree</option>
+              <option value="3">3 neutral</option>
+              <option value="4">4 agree</option>
+              <option value="5">5 strongly agree</option>
+            </select>
+
+            <h4>Question 3</h4>
+            <h6 for="exampleFormControlSelect1">You have a strong sense of morality and won't let anyone influence your decisions.</h6>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="1">1 strongly disagree</option>
+              <option value="2">2 disagree</option>
+              <option value="3">3 neutral</option>
+              <option value="4">4 agree</option>
+              <option value="5">5 strongly agree</option>
+            </select>
+
+            <h4>Question 4</h4>
+            <h6 for="exampleFormControlSelect1">You find pets to be the most amazing thing in the world.</h6>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="1">1 strongly disagree</option>
+              <option value="2">2 disagree</option>
+              <option value="3">3 neutral</option>
+              <option value="4">4 agree</option>
+              <option value="5">5 strongly agree</option>
+            </select>
+
+            <h4>Question 5</h4>
+            <h6 for="exampleFormControlSelect1">You are impulsive, if a friend invited you to a last minute trip to the beach you would go.</h6>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="1">1 strongly disagree</option>
+              <option value="2">2 disagree</option>
+              <option value="3">3 neutral</option>
+              <option value="4">4 agree</option>
+              <option value="5">5 strongly agree</option>
+            </select>
+
+            <h4>Question 6</h4>
+            <h6 for="exampleFormControlSelect1">You are quick ot put up boundries and hope others will as well</h6>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="1">1 strongly disagree</option>
+              <option value="2">2 disagree</option>
+              <option value="3">3 neutral</option>
+              <option value="4">4 agree</option>
+              <option value="5">5 strongly agree</option>
+            </select>
+
+            <h4>Question 7</h4>
+            <h6 for="exampleFormControlSelect1">You would let something pass if it's "not a big deal" to keep the peace, rather than be in conflict.</h6>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="1">1 strongly disagree</option>
+              <option value="2">2 disagree</option>
+              <option value="3">3 neutral</option>
+              <option value="4">4 agree</option>
+              <option value="5">5 strongly agree</option>
+            </select>
+
+            <h4>Question 8</h4>
+            <h6 for="exampleFormControlSelect1"> You are an active person who enjoys walks and hikes</h6>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="1">1 strongly disagree</option>
+              <option value="2">2 disagree</option>
+              <option value="3">3 neutral</option>
+              <option value="4">4 agree</option>
+              <option value="5">5 strongly agree</option>
+            </select>
+
+            <h4>Question 9</h4>
+            <h6 for="exampleFormControlSelect1">You prefer one to two friends as oppossed to a bigger group of friends.</h6>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="1">1 strongly disagree</option>
+              <option value="2">2 disagree</option>
+              <option value="3">3 neutral</option>
+              <option value="4">4 agree</option>
+              <option value="5">5 strongly agree</option>
+            </select>
+
+            <h4>Question 10</h4>
+            <h6 for="exampleFormControlSelect1">You love peanut butter and jelly sandwiches.</h6>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="1">1 strongly disagree</option>
+              <option value="2">2 disagree</option>
+              <option value="3">3 neutral</option>
+              <option value="4">4 agree</option>
+              <option value="5">5 strongly agree</option>
+            </select>
+          </div>
+        </div>
+      </div>
+<br>
+
+      <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+
+
+      <script type="text/javascript">
+
+        $(".btn").on("click", function(event) {
+          event.preventDefault();
+          var person = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            // scores: $()
+          };
+
+          console.log("this is person", person)
+    
+          // $.post("/api/characters", newCharacter)
+          //   .then(function(data) {
+          //     console.log("add.html", data);
+          //     alert("Adding character...");
+          //   });
+        });
+      </script>
+</body>
+
 </html>
