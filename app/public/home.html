@@ -12,30 +12,29 @@
     </head>
     <body>
         <br>
-        <div class="container">
+        <div id="intro" class="container">
             <div class="row">
               <div class="col-3">
               </div>
               <div class="col-6">
-                  <h1><i class="fas fa-users"></i>Friend Finder!</h1>
-                  <h4>Answer some simple questions</h4>
+                  <h1 id="title"><i class="fas fa-users"></i>Friend Finder!</h1>
+                  <br>
+                  <h4>Answer some simple questions...</h4>
+                  <br>
                   <h4>Then find a friend compatible with you!</h4>
-                  <button type="button" class="btn btn-primary btn-lg">Start Survey<i class="fas fa-clipboard-list"></i></button>
+                  <br>
+                  <a href="/survey"><button type="button" id="btn" class="btn btn-primary btn-lg">Start Survey<i class="fas fa-clipboard-list"></i></button></a>
               </div>
               <div class="col-3">
             </div>
             </div>
         </div>
 
+        <footer class="footer">
+            <div class="container">
+              <p><a href="/api/friends"> Current Friends List</a>
+            </div>
+          </footer>
 
-        <script type="text/javascript">
-
-            $(".btn").on("click", function(event) {
-              event.preventDefault();
-    
-              console.log("this should change pages")
-        
-            });
-          </script>
     </body>
 </html>
