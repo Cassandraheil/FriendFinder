@@ -1,0 +1,26 @@
+body{
+    background-color: lightcyan;
+}
+#intro {
+    background-color: lightblue;
+    padding: 20px;
+}
+#title {
+    font-family: fantasy;
+    font-size: 50px;
+    color: darkblue;
+}
+.title{
+    font-family: fantasy;
+    font-size: 40px;
+    color: darkblue;
+}
+#survey{
+    padding: 20px;
+    border-bottom: 2px solid darkblue;
+}
+
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+}

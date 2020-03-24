@@ -100,7 +100,7 @@
         </select>
 
         <h4>Question 6</h4>
-        <h6 for="exampleFormControlSelect1">You are quick ot put up boundries and hope others will as well</h6>
+        <h6 for="exampleFormControlSelect1">You are quick to put up boundries and shut people out</h6>
         <select id="q6" class="input" class="form-control" id="exampleFormControlSelect1">
           <option value="1">1 strongly disagree</option>
           <option value="2">2 disagree</option>
@@ -165,25 +165,32 @@
 
 
 
-  <!-- Modal -->
+  <!-- Modal fade -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
 
-      <!-- Modal content-->
+      <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">This is your new friend!!</h4>
         </div>
+        <!-- body  -->
         <div class="modal-body">
-          <p id="modalTxt">Some text in the modal.</p>
-          <!-- text will be name of person  -->
-          <!-- also a picture  -->
+          <h3 class="name"></h3>
+          <!-- <img
+            src="https://i.pinimg.com/originals/c2/f8/5a/c2f85a537557ffa8db27983503d51b22.jpg"
+            alt="Friends Picture Here" height="250px" width="200px"> -->
+
         </div>
+        <!-- footer  -->
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
+
+
+
+
 
 
       <script type="text/javascript">
@@ -206,30 +213,24 @@
               $("#q10").val()
             ]
           };
-          
-          
-          
+
+
+
           $.post("/api/friends", person, function (data) {
             console.log("person being posted", data);
 
-            //trying ot parseInt
-            var numScore = person.scores.forEach(convert);
-            function convert(){
-              parseInt(person.scores);
-            };
-          //   for (i = 0; i < person.scores.length; i++) {
-          //     parseInt(person.scores[i]);
-          //     numScore.push(person.scores[i]);
-          //   };
-          //  var trying = parseInt(numScore);
-            console.log("trying", numScore)
+            console.log("bff", data.name, "photolink", data.photo);
+            var name = data.name
+            var photo = data.photo
 
-            //mathlogic
+            var modalbody = $(".modal-body");
+            var modalTxt = $("<h1>" + name + "</h1>" );
+            var modalPic = $("<img src='"+ photo +"' alt='friend pic' height='300px' width='250px'></img>");
+            modalbody.append(modalTxt);
+            modalbody.append(modalPic);
 
-            
+            $("#myModal").modal();
 
-            // $(".modal-body").push("the name of person");
-            // $("#myModal").modal();
           });
 
         });
