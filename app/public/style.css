@@ -1,9 +1,12 @@
 body{
-    background-color: lightcyan;
+    background-color: gray;
 }
 #intro {
     background-color: lightblue;
     padding: 20px;
+}
+.container{
+    background-color: lightblue;
 }
 #title {
     font-family: fantasy;
